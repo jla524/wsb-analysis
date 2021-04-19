@@ -9,7 +9,7 @@ if __name__ == '__main__':
     fig = plt.figure(figsize=(16, 9)) 
     plt.title('Keyword count over time')
 
-    for word in ['GME', 'AMC', 'NOK', 'DD']:
+    for word in ['GME', 'AMC', 'NOK', 'moon']:
         count_df = get_word_count(data, word)
         plt.plot(count_df['date'], count_df['count'], label=word)
    
