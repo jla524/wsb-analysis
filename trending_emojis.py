@@ -13,6 +13,7 @@ from matplotlib.font_manager import FontProperties
 
 
 prop = FontProperties(fname='/System/Library/Fonts/Apple Color Emoji.ttc')
+emojis = ['🚀', '💎', '🤲', '🐻']
 
 
 if __name__ == '__main__':
@@ -21,7 +22,7 @@ if __name__ == '__main__':
     fig = plt.figure(figsize=(16, 9))
     plt.title('Emoji count over time')
     
-    for emoji in ['🚀', '💎', '🤲', '🐻']:
+    for emoji in emojis:
         count_df = get_word_count(data, emoji)
         plt.plot(count_df['date'], count_df['count'], label=emoji)
 
