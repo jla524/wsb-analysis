@@ -17,14 +17,14 @@ Print a list of top N posts (ranked by score) in the subreddit.
 
 ## Trending Emojis
 Given a list of emojis, display the number of times they have been used (in title or body) for each day.
-[emoji.png](https://github.com/jla524/wsb-analysis/blob/main/images/emoji.png?raw=true)
+![emoji.png](https://github.com/jla524/wsb-analysis/blob/main/images/emoji.png?raw=true)
 
 
 ## Trending Words
 Similar to emojis, but take a list of words (or phrases).
-[word.png](https://github.com/jla524/wsb-analysis/blob/main/images/word.png?raw=true)
+![word.png](https://github.com/jla524/wsb-analysis/blob/main/images/word.png?raw=true)
 
 
 ## Word Cloud
 Generate a word cloud using all words in the dataset.
-[cloud.png](https://github.com/jla524/wsb-analysis/blob/main/images/cloud.png?raw=true)
+![cloud.png](https://github.com/jla524/wsb-analysis/blob/main/images/cloud.png?raw=true)
