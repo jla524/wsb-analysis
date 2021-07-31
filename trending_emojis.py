@@ -1,20 +1,15 @@
+#!/usr/bin/env python3
 import matplotlib
 import mplcairo
 import pandas as pd
 from helper import get_word_count
-
-
-# Use a third-party backend for plotting emojis
-matplotlib.use("module://mplcairo.macosx")
-
-
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 
-
+# Use a third-party backend for plotting emojis
+matplotlib.use("module://mplcairo.macosx")
 prop = FontProperties(fname='/System/Library/Fonts/Apple Color Emoji.ttc')
 emojis = ['🚀', '💎', '🤲', '🐻']
-
 
 if __name__ == '__main__':
     data = pd.read_csv('reddit_wsb.csv')
