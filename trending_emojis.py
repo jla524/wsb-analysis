@@ -16,7 +16,7 @@ if __name__ == '__main__':
     data['date'] = pd.to_datetime(data['timestamp']).dt.round('D')
     fig = plt.figure(figsize=(16, 9))
     plt.title('Emoji count over time')
-    
+
     for emoji in emojis:
         count_df = get_word_count(data, emoji)
         plt.plot(count_df['date'], count_df['count'], label=emoji)
