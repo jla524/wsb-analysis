@@ -6,6 +6,7 @@ import pandas as pd
 
 
 def load_data() -> pd.DataFrame:
+    """Read the subreddit posts as a DataFrame"""
     return pd.read_csv('../data/reddit_wsb.csv')
 
 
