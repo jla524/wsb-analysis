@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-import matplotlib
-import mplcairo
+"""
+Plot the count of emojis over time in r/wallstreetbets
+"""
 import pandas as pd
-from helper import get_word_count
+import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
+from helper import get_word_count
 
 # Use a third-party backend for plotting emojis
 matplotlib.use("module://mplcairo.macosx")

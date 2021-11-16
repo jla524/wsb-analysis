@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+Define helper function
+"""
 import pandas as pd
 
 

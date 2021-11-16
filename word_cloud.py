@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
+"""
+Create a word cloud using text from r/wallstreetbets
+This may take a while to execute
+"""
+from string import punctuation
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
-from string import punctuation
 
 
 def clean_text(text: str) -> str:
