@@ -2,14 +2,20 @@
 """
 Plot the count of emojis over time in r/wallstreetbets
 """
+import sys
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 from helper import load_data, get_word_count
 
+# Exit if user is not running on darwin
+if sys.platform != 'darwin':
+    print("Emoji font is only supported on macOS")
+    sys.exit(1)
+
 # Use a third-party backend for plotting emojis
-matplotlib.use("module://mplcairo.macosx")
+matplotlib.use('module://mplcairo.macosx')
 prop = FontProperties(fname='/System/Library/Fonts/Apple Color Emoji.ttc')
 emojis = ['🚀', '💎', '🤲', '🐻']
 
