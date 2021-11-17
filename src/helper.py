@@ -2,12 +2,16 @@
 """
 Define helper functions
 """
+from pathlib import Path
 import pandas as pd
 
 
 def load_data() -> pd.DataFrame:
     """Read the subreddit posts as a DataFrame"""
-    return pd.read_csv('../data/reddit_wsb.csv')
+    root_path = Path(__file__).resolve(strict=True).parent.parent
+    data_path = root_path / 'data'
+    file_path = data_path / 'reddit_wsb.csv'
+    return pd.read_csv(file_path)
 
 
 def get_word_count(df: pd.DataFrame, word: str) -> pd.DataFrame:
